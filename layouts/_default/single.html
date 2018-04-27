@@ -12,7 +12,7 @@
         
         {{ if .Site.DisqusShortname }}
         <h3>Kommentare</h3>
-        <em>Um anonym zu kommentieren: Kommentar schreiben, Name und E-Mail eintragen und bei "Ich möchte lieber als Gast schreiben" das Häkchen setzen.</em>
+        <small><em>Um ohne Login zu kommentieren: Kommentar schreiben, Name und E-Mail eintragen und bei "Ich möchte lieber als Gast schreiben" das Häkchen setzen.</em></small>
         {{ template "_internal/disqus.html" . }}
         {{ end }}
       </div>
