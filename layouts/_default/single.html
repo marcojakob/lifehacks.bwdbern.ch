@@ -9,7 +9,7 @@
            {{ partial "youtube.html" . }}
          {{ end }}
          {{ .Content }}
-        
+        {{ template "_internal/disqus.html" . }}
         <h3>Kommentare</h3>
 <div id="disqus_thread"></div>
 <script>
