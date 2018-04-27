@@ -9,7 +9,11 @@
            {{ partial "youtube.html" . }}
          {{ end }}
          {{ .Content }}
+        
+        {{ if .Site.DisqusShortname }}
+        <h3>Kommentare</h3>
         {{ template "_internal/disqus.html" . }}
+        {{ end }}
       </div>
     </div>
   </div>
